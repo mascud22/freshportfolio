@@ -1,0 +1,69 @@
+@import "tailwindcss";
+*{
+     font-family: "DM Sans", sans-serif;
+}
+
+
+@theme {
+  --color-primary: #000819; /* blue-600 */
+  --color-next-prim: #101a2a; /* purple-600 */
+  --color-secondary: #0b1422; /* purple-600 */
+  --color-third: #151c2d; /* amber-500 */
+  --color-fourth: #1c243a;
+  --color-text: #f6faff;
+  --color-text-secondary: #cfd6da;
+  --color-text-third: #c1cad0;
+  --color-ui-color: #4c64b4;
+  --color-ui-color-text: #dfe5ef;
+  --color-invert: #dfe5ef;
+  --color-invert-text: #000819;
+  --color-pending: #000819;
+  --color-pending-text: #000819;
+  --color-paid: #000819;
+  --color-paid-text: #000819;
+  --color-partial: #000819;
+  --color-partial-text: #000819;
+  --color-invert-second: #382f21;
+}
+:root{
+ --color-primary: #000a02; /* blue-600 */
+  --color-next-prim: #000000; /* purple-600 */
+  --color-secondary: #161616; /* purple-600 */
+  --color-third: #1b1b1b; /* amber-500 */
+  --color-fourth: #232323cd;
+  --color-text: #ffffff;
+  --color-text-secondary: #e3e3e3;
+  --color-text-third: #bfbfbf;
+  --color-ui-color: #e24040;
+  --color-ui-color-text: #ffeeee;
+  --color-invert: #dfe5ef;
+  --color-invert-text: #000819;
+  --color-pending: #f34444;
+  --color-pending-text: #f8dbdb;
+  --color-paid: #95f5af;
+  --color-paid-text: #33513b;
+  --color-partial: #ffc8a7;
+  --color-partial-text: #30281b;
+  --color-invert-second: #cad1dc;
+}
+.dark{
+  --color-primary: #ffffff; /* blue-600 */
+  --color-secondary: #f5f5f5; /* purple-600 */
+   --color-next-prim: #eaeaea; /* purple-600 */
+  --color-third: #e9e9e9; /* amber-500 */
+  --color-fourth: #c6c6c6;
+  --color-text: #010d20;
+  --color-text-secondary: #222a37;
+  --color-text-third: #303b4d;
+  --color-ui-color: #ea8282;
+  --color-ui-color-text: #ffeeee;
+  --color-invert: #101c2f;
+  --color-invert-text: #eff3fa;
+   --color-pending: #ed4b4b;
+  --color-pending-text: #f0cece;
+  --color-paid: #66e287;
+  --color-paid-text: #33513b;
+  --color-partial: #ffc8a7;
+  --color-partial-text: #30281b;
+  --color-invert-second: #19253a;
+}
