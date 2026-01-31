@@ -45,7 +45,7 @@ const About = () => {
   
         {/* Intro */}
         <h1 className='text-text font-bold text-xl flex items-center gap-2'>
-          👋 Hello, I’m <span className='text-text-third'>Abshir Tahir</span> <QuestionMarkCircleIcon className='size-6 cursor-pointer transition-all ease-in-out hover:scale-105'/>
+          👋 Hello, I’m <span className='text-text-third'>Abshir </span> <QuestionMarkCircleIcon className='size-6 cursor-pointer transition-all ease-in-out hover:scale-105'/>
         </h1>
   
         <p className='text-text-third'>

@@ -90,10 +90,10 @@ const Skills = () => {
             ))}
 
           </div>
-          <div className='bg-ui-color/8 drop-shadow-[0_4px_38px] drop-shadow-ui-color/20 border-2 border-ui-color/15 rounded-4xl w-full hover:sm:w-full    sm:w-full h-fit flex flex-col items-center gap-2 p-10 transition-all ease-in-out cursor-pointer hover:scale-103 '>
+          <div className='bg-ui-color/8 drop-shadow-[0_4px_38px] drop-shadow-ui-color/20 border-2 border-ui-color/15 rounded-4xl w-full hover:sm:w-full    sm:w-full h-fit flex flex-col items-center gap-2 sm:p-10 p-4 transition-all ease-in-out cursor-pointer hover:scale-103 '>
                 <MegaphoneIcon className=' text-text size-17'/>
             <div className='flex items-center gap-1.5'>
-                <h1 className=' text-text font-semibold text-xl'>Wanna look my other skills</h1>
+                <h1 className=' text-text font-semibold text-xl text-center'>Wanna look my other skills</h1>
             </div>
             <p className='text-text-third w-full line-clamp-2 text-center sm:w-130'>I have several skills like <b>Photoshop</b> <b>Illustrator</b> <b>Adobe after Effect</b>  <b>Graphic Design</b>  <b>Motion Design</b> <b>UI/UX Design</b> <b>Web Design</b>    </p>
             <button className='py-2 px-3 bg-ui-color/80 text-ui-color-text rounded-3xl sm:w-110 w-full font-semibold transition-all ease-in-out cursor-pointer hover:scale-103'>Look Out</button>

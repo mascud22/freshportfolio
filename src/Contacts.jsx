@@ -7,8 +7,8 @@ const Contacts = () => {
         <h1 className=' text-text text-3xl sm:text-4xl  w-full font-semibold text-center drop-shadow-[0_4px_58px] drop-shadow-ui-color/40 border-b-2 border-b-ui-color/10 py-4 rounded-xl'>
             Every Way You Want, <span className=' text-text-third'><br className='hidden sm:flex' /> <span className='bg-ui-color  mx-1 px-3 rounded-2xl text-ui-color-text drop-shadow-[0_4px_38px] drop-shadow-ui-color/20'>Contact</span> Me in Any Platform.</span>
       </h1>
-      <div className='bg-red-300/ w-full h-full p-5  sm:px-20 flex items-center gap-3 flex-col sm:flex-row '>
-        <div className='bg-red-200/ p-5 flex-1 w-full h-full rounded-3xl flex flex-col gap-2'>
+      <div className='bg-red-300/ w-full h-full p-5  sm:px-20 flex items-start  gap-5 flex-col sm:flex-row '>
+        <div className='bg-red-200/ p- flex-1 w-full h-full rounded-3xl flex flex-col gap-2 sm:mt-3'>
           <div className='flex  items-center gap-3 mb-8'>
             {/* <img className='size-9 mt-0.5 border-2 border-ui-color/20 p-0.5 rounded-xl' src="/public/Untitled-1 [Recovered].png" alt="" /> */}
             <div className='size-8 bg-secondary rounded-xl'></div>
@@ -89,7 +89,7 @@ const Contacts = () => {
              </div>
            </div>
            <div className='h-full'></div>
-            <button className=' drop-shadow-[0_4px_38px] drop-shadow-ui-color/60 bg-ui-color text-ui-color-text rounded-3xl py-3 px-4.5 transition-all ease-in-out hover:scale-101.5 active:scale-99 cursor-pointer font-semibold '>Let's Get Started</button>
+            <button className=' drop-shadow-[0_4px_38px] drop-shadow-ui-color/60 bg-ui-color text-ui-color-text rounded-3xl py-3 px-4.5 transition-all ease-in-out hover:scale-101.5 active:scale-99 cursor-pointer font-semibold  sm:mt-7'>Let's Get Started</button>
         </div>
       </div>
     </div>
