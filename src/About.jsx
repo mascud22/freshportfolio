@@ -20,7 +20,7 @@ const About = () => {
         </div> */}
           <div className='w-full md:w-full h-full flex items-center gap-3 border-ui-color/10 border-2 bg-ui-color/ backdrop-blur-xl drop-shadow-[0_4px_18px] drop-shadow-ui-color/10 rounded-2xl p-2 hover:scale-101 transition-all ease-in-out order-1'>
               <div className='flex  w-full  bg-ui-color/40 h-85 md:h-124 rounded-2xl items-center justify-center flex-2 overflow-hidden relative'>
-                  <img  className='size-full object-cover md:object-cover  flex items-center' src="/public/Serene Home Office with Engaged Telecommuter.png" alt=""  />
+                  <img  className='size-full object-cover md:object-cover  flex items-center'  src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt=""  />
                   {/* <div className='w-95 h-13 bg-red-400/ border-2/ border-ui-color/ rounded-2xl px-1 backdrop-blur-3xl  absolute bottom-3 items-center flex justify-center'>
                       <h1 className=' text-ui-color-text font-bold text-xl'>Change Your Prespectiveof designing</h1>
                   </div> */}
