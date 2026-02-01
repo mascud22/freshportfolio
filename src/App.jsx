@@ -6,6 +6,7 @@ import Line from './Line'
 import About from './About'
 import Skills from './Skills'
 import Contacts from './Contacts'
+import Footer from './Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Skills/>
       {/* <Projects/> */}
       <Contacts/>
+      <Footer/>
     </div>
   )
 }

@@ -9,39 +9,28 @@ const About = () => {
       description: "I’m a passionate "
     }
   ]
+   const stats = [
+    { label: 'Projects', value: '25+' },
+    { label: 'Clients', value: '15+' },
+    { label: 'Experience', value: '3 Years' },
+  ]
   return (
     <div className='flex flex-col mt-10'>
-      <h1 className=' text-text text-3xl sm:text-4xl  w-full font-semibold text-center drop-shadow-[0_4px_58px] drop-shadow-ui-color/60'>
+      <h1 className=' text-text text-3xl sm:text-4xl  w-full font-semibold text-center drop-shadow-[0_4px_58px] drop-shadow-ui-color/40 border-b-2 border-b-ui-color/10 py-4 rounded-xl'>
             Space Talk   <span  className='bg-ui-color  mx-1 px-3 rounded-2xl text-ui-color-text drop-shadow-[0_4px_38px] drop-shadow-ui-color/20'>About  </span> <br className='' /> Me  And Progress
         </h1>
       <div className='w-full flex-col  md:flex-row h-fit md:h-fit mt-10 bg-indigo-500/ md:px-35  px-5 flex items-start gap-4 '>
         {/* <div className='flex w-full items-center justify-center '>
           <h1 className='text-text text-3xl font-bold'>About Me</h1>
         </div> */}
-          <div className='w-full md:w-full h-full flex items-center gap-3 border-ui-color/10 border-2 bg-ui-color/ backdrop-blur-xl drop-shadow-[0_4px_18px] drop-shadow-ui-color/10 rounded-2xl p-2 hover:scale-101 transition-all ease-in-out order-1'>
-              <div className='flex  w-full  bg-ui-color/40 h-85 md:h-124 rounded-2xl items-center justify-center flex-2 overflow-hidden relative'>
-                  <img  className='size-full object-cover md:object-cover  flex items-center'  src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt=""  />
-                  {/* <div className='w-95 h-13 bg-red-400/ border-2/ border-ui-color/ rounded-2xl px-1 backdrop-blur-3xl  absolute bottom-3 items-center flex justify-center'>
-                      <h1 className=' text-ui-color-text font-bold text-xl'>Change Your Prespectiveof designing</h1>
-                  </div> */}
+          <div className='w-full md:w-100 md:h-full h-full flex items-center gap-3 border-ui-color/10 border-2 bg-ui-color/ backdrop-blur-xl drop-shadow-[0_4px_18px] drop-shadow-ui-color/10 rounded-2xl p-2 hover:scale-101 transition-all ease-in-out order-1'>
+              <div className='flex  w-full  bg-ui-color/40 h-85 md:h-153 rounded-2xl items-center justify-center flex-2 overflow-hidden relative'>
+                  <img  className='size-full object-cover md:object-cover  flex items-center'  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"  alt=""  />
+                 
               </div> 
-              {/* <div className='w-8 items-center p-2  flex flex-col gap-2 bg-ui-color drop-shadow-[0_4px_58px] drop-shadow-ui-color/90 sm:h-130 h-full rounded-md justify-between'>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  <div className='size-5 bg-primary/20 drop-shadow-[0_4px_38px] drop-shadow-primary rounded-lg'></div>
-                  
-              </div> */}
+              
           </div>
-          <div className='border-2 border-ui-color/10 rounded-2xl  h-full flex p-4 flex-col gap-3    drop-shadow-[0_4px_58px] drop-shadow-ui-color/90'>
+          <div className='border-2 border-ui-color/10 rounded-2xl  h-full flex p-4 flex-col gap-3    drop-shadow-[0_4px_58px] drop-shadow-ui-color/90 w-full'>
   
         {/* Intro */}
         <h1 className='text-text font-bold text-xl flex items-center gap-2'>
@@ -80,6 +69,15 @@ const About = () => {
             <p><b>Collaboration |</b> Working closely with others and  learning.</p>
           </p>
         </div>
+        <h2 className='text-text font-semibold text-lg flex items-center gap-2'><SparklesIcon className='w-5 h-5 text-text-third'/> My Progress</h2>
+          <div className='flex gap-4'>
+            {stats.map((stat, idx) => (
+              <div key={idx} className='flex flex-col items-center'>
+                <span className='text-ui-color font-bold text-lg'>{stat.value}</span>
+                <span className='text-text-third text-sm'>{stat.label}</span>
+              </div>
+            ))}
+          </div>
   
         {/* Skills & Tools */}
         {/* <h2 className='text-text font-semibold text-lg flex items-center gap-2'>
@@ -121,7 +119,9 @@ const About = () => {
           I focus on <b>simplicity, clarity, and consistency</b>.
           I plan before I build, pay attention to details,
         </p>
-  
+             <button className='mt-6 drop-shadow-[0_4px_38px] drop-shadow-ui-color/10 bg-ui-color text-ui-color-text rounded-3xl py-3 px-4 transition-all hover:scale-105 active:scale-95 font-semibold'>
+              Hire Me 🚀
+            </button>
         
   
       </div>

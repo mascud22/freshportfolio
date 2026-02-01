@@ -12,7 +12,7 @@ const Hero = () => {
       <MapIcon className='size-20 top-50 right-30 absolute text-ui-color/20 blur-[4px] hidden sm:flex  drop-shadow-[0_4px_38px] drop-shadow-ui-color/60'/>
       <TagIcon className='size-20 top-20 right-60 absolute text-ui-color/20 blur-[4px] hidden sm:flex  drop-shadow-[0_4px_38px] drop-shadow-ui-color/60'/>
       <BoltIcon className='size-30 top-80 right-60 absolute text-ui-color/20 blur-[4px] hidden sm:flex  drop-shadow-[0_4px_38px] drop-shadow-ui-color/60'/>
-      <img className=' absolute h-114   opacity-10  object-fill ' src="/public/grid.png" alt="" />
+      <img className=' absolute h-114   opacity-10  object-fill ' src="/src/assets/grid.png" alt="" />
       {/* <img className='size-90 top-30 right-60 opacity-75 z-60 object-cover absolute' src="/public/pexels-catherine-zhuang-1225716959-23915302-removebg-preview.png" alt="" /> */}
       <h1  className='text-text sm:text-7xl text-[47px] leading-13.5 sm:leading-15 text-center font-semibold z-50 drop-shadow-[0_4px_38px] drop-shadow-ui-color/10'>Turn Your <span className=' font-bold text-ui-color drop-shadow-[0_4px_38px] drop-shadow-ui-color'> Ideas  </span> <br /> <span className='text-text-third sm:text-7xl text-[50px]'>Into Scalable Solutions</span></h1>
       <p className=' z-50 text-text-third  sm:text-lg text-center sm:max-w-200 px-6 '>I <b>design and build high-performance full-stack</b> web applications 😱 that are <b>fast,secure, 🧗‍♂️and crafted to grow</b> with your business📕.</p>

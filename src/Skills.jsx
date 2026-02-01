@@ -3,61 +3,37 @@ import { DocumentIcon } from '@heroicons/react/16/solid'
 import React from 'react'
 
 const Skills = () => {
-    const skillsData = [
-    {
-      logo: "",
-      skill: "JavaScript & TypeScript",
-      categorie: "Web Development",
-      description:
-        "Javascript is my favourite programing langueage and i know well",
-    },
-    {
-      logo: "",
-      skill: "MongoDb & Express",
-      categorie: "Web Development",
-      description:
-        "My datbase is mongodb i use alot in my apps",
-    },
-    {
-      logo: "",
-      skill: "React JS & Next JS",
-      categorie: "Web Development",
-      description:
-        "The only framwork i use is react so i enjoy this is not good for sure",
-    },
-    {
-      logo: "",
-      skill: "Tailwind & Bootstarp",
-      categorie: "Web Development",
-      description:
-        "The only framwork i use is react so i enjoy very well and i liked ",
-    },
-  ];
-    const otherSkills = [
-    {
-      logo: "",
-      skill: "JavaScript",
-      categorie: "Web Development",
-      description:
-        "Javascript is my favourite programing langueage and i know well",
-     
-    },
-    {
-      logo: "",
-      skill: "MongoDb",
-      categorie: "Web Development",
-      description:
-        "My datbase is mongodb i use alot in my apps so enjoy this content of mongodb",
-    },
-    {
-      logo: "",
-      skill: "React JS",
-      categorie: "Web Development",
-      description:
-        "The only framwork i use is react so i enjoy this is not good for sure",
-    },
-    
-  ];
+   const skillsData = [
+  {
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    skill: "JavaScript & TypeScript",
+    categorie: "Web Development",
+    secondLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    description: "Javascript is my favourite programming language and I know it well",
+  },
+  {
+    logo: "data:image/png;base64,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",
+    skill: "MongoDb & Express",
+    categorie: "Web Development",
+    secondLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSer5zs_osl8bYfvfcy-2o-n0S8-Q-p_9U-g&s",
+    description: "My database is MongoDB I use a lot in my apps",
+  },
+  {
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s",
+    skill: "React JS & Next JS",
+    categorie: "Web Development",
+    secondLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4Gm4ZZkmeriyXZlpU7_sXXHYDt06yt9yLQ&s",
+    description: "The only framework I use is React so I enjoy it",
+  },
+  {
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s",
+    skill: "Tailwind & Bootstrap",
+    categorie: "Web Development",
+    secondLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJwOodD9dyO-Js6H5K2dWK10TBEA1pvzoFCQ&s",
+    description: "I enjoy building responsive and modern UIs",
+  },
+];
+
   return (
     <div className='flex flex-col gap-2 mt-5 border-t-2 border-t-secondary pt-10 w-full sm:px-25 px-4 items-center '>
       <h1 className=' text-text text-3xl sm:text-4xl  w-full font-semibold text-center drop-shadow-[0_4px_58px] drop-shadow-ui-color/40 border-b-2 border-b-ui-color/10 py-4 rounded-xl'>
@@ -75,9 +51,21 @@ const Skills = () => {
             {skillsData.map((skillList,index) => (
                 <div className='bg-ui-color/12 drop-shadow-[0_4px_38px] drop-shadow-ui-color/60 border-2 border-ui-color/20 rounded-4xl w-full hover:sm:w-80   sm:w-70 h-fit flex flex-col items-start gap-2 p-4 transition-all ease-in-out cursor-pointer hover:scale-103'>
                 <div className='flex items-center justify-between w-full '>
-                    <div className='size-10 bg-ui-color rounded-3xl flex items-center justify-center'>
-                        <button className={`  font-semibold text-invert-text bg-invert rounded-3xl text-sm ${index +1 > 1 ? "py-1 px-2.5" : "py-1 px-3"}`}>{index+1}</button>
-                    </div>
+                   <div className='flex items-center gap-2'>
+                      <div className='size-10 bg-ui-color rounded-3xl flex items-center justify-center'>
+                          <div className='size-10 bg-ui-color rounded-3xl flex items-center justify-center overflow-hidden'>
+                              <img className='size-10 object-cover' src={skillList.logo} alt={skillList.skill} />
+                          </div>
+  
+                      </div>
+
+                      <div className='size-7 bg-ui-color rounded-3xl flex items-center justify-center'>
+                          <div className='size-7 bg-ui-color rounded-3xl flex items-center justify-center overflow-hidden'>
+                              <img className='size-10 object-cover' src={skillList.secondLogo} alt={skillList.skill} />
+                          </div>
+  
+                      </div>
+                   </div>
                     <FireIcon className=' text-text size-6 mr-3 transition-all ease-in-out cursor-pointer hover:scale-103'/>
                 </div>
                 <div className='flex flex-col'>
